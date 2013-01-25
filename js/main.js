@@ -5,7 +5,7 @@ var app = {
         var self = this;
         this.store.findByName($('.search-key').val(), function(employees) {
             $(".employee-list").html(self.employeeLiTpl(employees));
-            console.log(employees);
+            console.log($('.search-key').val());
         });
     },
 
@@ -27,7 +27,7 @@ var app = {
     },
 
     renderHomeView: function() {
-        $('body').append(this.homeTpl());
+        $('body').html(this.homeTpl());
         $('.search-key').on('keyup', $.proxy(this.findByName, this));
     }
 

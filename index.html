@@ -4,7 +4,7 @@
 	<div class="header">
 		<h1>Home</h1>
 	</div>
-	<div class="search-key">
+	<div class="search-bar">
 		<input type="text" class="search-key" />
 	</div>
 	<ul class="employee-list"></ul>
@@ -13,6 +13,7 @@
 <script id="employee-li-tpl" type="text/x-handlebars-template">
 	{{#.}}
 	<li><a href="#employees/{{this.id}}">{{this.firstname}} {{this.lastName}}<br/>{{this.title}}</a></li>
+	{{/.}}
 </script>
 
 <script src="phonegap.js"></script>
