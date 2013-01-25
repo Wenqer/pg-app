@@ -26,7 +26,7 @@ var app = {
     },
 
     renderHomeView: function() {
-        $('body').html(this.homeTpl());
+        $('body').append(this.homeTpl());
         $('.search-key').on('keyup', $.proxy(this.findByname, this));
     }
 
