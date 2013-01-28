@@ -34,7 +34,7 @@ var EmployeeView = function(employee) {
 		};
 		var phoneNumbers = [];
 		phoneNumbers[0] = new ContactField('work', employee.officePhone, false);
-		phoneNumbers[1] = new ContactField('modile', employee.cellPhone, true); // prefered number
+		phoneNumbers[1] = new ContactField('mobile', employee.cellPhone, true); // prefered number
 		contact.phoneNumbers = phoneNumbers;
 		contact.save();
 		return false;
